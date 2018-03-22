@@ -1,0 +1,321 @@
+/* Page settings */
+* {
+  margin: 0;
+  padding: 0;
+}
+html { 
+  font-size: 100%;
+  font-family: 'Exo', sans-serif;
+} 
+@media only screen and (max-width: 768px) {
+html {
+  font-size: 10px;}
+}
+body {
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  margin: 2%;
+}
+
+/* ----------Navigation Bar Section----------------- */
+@media only screen and (min-width: 630px) {
+.nav {
+  margin: 1%;
+  position: fixed;
+  top: 0;
+  margin-left: 60%;
+}
+  }
+div .nav{
+    display: flex;
+    padding: 15px;
+    justify-content: left;
+    background-color: rgba(255,255,255,0.5)
+  }
+nav .nav-link{
+    font-size: 0.8rem;
+    padding-right: 10px;
+    margin: 0 4px 0 4px;
+    text-decoration: none;
+    transition: color 0.25s;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    align-self: right;
+  }
+.nav-pipe {
+      border-right: black 1px solid;
+  }
+.nav-link:hover{
+    font-weight: bold;
+  }
+
+/* -------------Presentation animation------------- */
+.title {
+    /* font-family: 'Exo', sans-serif; */
+    font-family: 'Exo', sans-serif;
+    /* font-family: 'Poiret One', cursive; */
+    margin-top: 7%;
+    margin-left: 20%;
+    animation: move 3s;
+  -webkit-animation: move 3s;
+ }
+
+@keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+    to {
+      margin-left: 20%;
+      width: 100%;
+    }
+  }
+@-webkit-keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 20%;
+      width: 100%;
+    }
+  }
+
+/*------- About me Section -------------*/
+.arrow-bottom{
+    position: relative;
+    top: 3rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 12.5px 0 12.5px;
+    border-color: #050505 transparent transparent transparent;
+    margin-bottom: 0;
+  }
+#about-me {
+    text-align: center;
+  }
+.title-about-me {
+  margin: 2.0rem;
+  font-size: 2.5rem;
+ }  
+#about-me p {
+  font-size: 1.5rem;
+ }
+
+/* -------- Education and Work Section ----------- */
+/* Adding some style to my Education and Work title */
+.arrow-bottom{
+  position: relative;
+  top: 3rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 12.5px 0 12.5px;
+  border-color: #050505 transparent transparent transparent;
+  margin-bottom: 0;
+}
+.title-edu-and-work {
+    font-size: 2.5rem;
+    margin: 2.5rem;
+    text-align: center;
+  }
+/* Placing Education and Work experience next to each other */
+@media only screen and (min-width: 630px) {
+  /* only for screens wider or equal to 630 pixels */
+.education {
+    margin: 1rem;  
+    float: left;
+    width: 45%;
+  }
+.work-experience {
+    margin: 1rem;
+    margin-bottom: 2.5rem;
+    float: right;
+    width:45%;
+  }
+} 
+/* Centering titles */
+.education h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+.work-experience h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+.education p {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  }
+.work-experience p {
+  font-size: 1.5rem;
+  }
+
+/* ----------- My expertise Section -------- */
+.my-expertise {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  #title-my-expertise {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    clear: both;
+    text-align: center;
+   }
+  .front-end, .back-end {
+    margin-top: 0px;
+    font-size: 1.5em;
+    text-align: center;
+    }
+.title-front-end, .title-back-end {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ruby-icon { 
+  margin: 2rem;         /* Format icons */
+  height: 12rem;
+  width: 12rem;
+  display: block;
+  transition: all 0.5s;
+}
+.rails-icon {
+  margin: 2rem;
+  height: 12rem;
+  width: 14rem;
+  display: block;
+  transition: all 0.5s;
+}
+.html-icon, .css-icon { 
+  height: 12rem;
+  margin: 2rem;         /* Format icons */
+  display: block;
+  transition: all 0.5s;
+}
+.ruby-icon:hover, .html-icon:hover, .css-icon:hover{             /* Some animations */
+  transform: rotate(360deg) scale(1.2);
+   }
+.rails-icon:hover{
+  transform: skew(30deg, 20deg);
+   }
+/* Format for mobile devices */
+@media only screen and (max-width: 768px) {
+  .ruby-icon, .rails-icon, .html-icon, .css-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+li{ 
+    list-style: none;
+   }
+     
+/* --------- My Projects Section ----------- */
+/* Placing Ruby and On rails projects next to each other */
+@media only screen and (min-width: 630px) {
+  /* only for screens wider or equal to 630 pixels */
+  .my-projects {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }}
+  #title-my-projects {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    clear: both;
+    text-align: center;
+   }
+  .ruby, .on-rails {
+    margin-top: 0px;
+    font-size: 1.5rem;
+    text-align: center;
+   }
+.title-ruby, .title-on-rails {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+   }
+/* .ruby-icon, .rails-icon{
+  display: inline;
+  max-height:4rem;
+  transition: all 0.5s;
+  margin: 1rem;
+   }
+.ruby-icon {
+  position: relative;
+    left: 21%;
+    margin: 1rem;
+   }
+.rails-icon {
+  position: relative;
+  left: 60%;
+  margin: 1rem;
+   } */
+   
+/* --------  Contact me Section ------------- */
+#get-in-touch{
+    clear: both;
+    margin: 2.5rem;
+  }
+.title-get-in-touch {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2.5rem;
+  }
+#get-in-touch p {
+  font-size: 1.5rem;
+}
+
+/* --------- Contact me social media and github icons section ---- */
+#link-icons {
+  margin: 2.5rem;
+  text-align: right;
+  height: 5rem;
+}
+.linkedin_round_gray_32 {
+  background: url(http://www.dreamtemplate.com/dreamcodes/social_icons/linkedin-focused.png) no-repeat;
+}
+.tsc_social_round_gray_32 {
+  display: inline-block;
+  text-indent: -999em;
+  height: 5rem;
+  width: 5rem;
+  text-decoration: none;
+  padding: 2px;
+  vertical-align: middle;
+}
+/* @media only screen and (min-width: 630px) {
+.tsc_social_round_gray_32 {
+  height: 3rem;
+  width: 3rem; }
+} */
+.facebook_round_gray_32 {
+  background: url(http://www.dreamtemplate.com/dreamcodes/social_icons/facebook-focused.png) no-repeat;
+}
+.github_round_gray_32 {
+  background: url('github.png') no-repeat;
+  background-size: 2rem 2rem;
+  
+}
+
+/* Back to top link */
+/* Format the back to top link */
+.to-top {
+    text-decoration: none;
+    color: black;
+    margin: 2.5rem;
+    }
+.to-top:hover {
+    color: red;
+    font-weight: bold;
+    }
